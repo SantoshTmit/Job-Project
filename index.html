@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Candidates</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap link css  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid g-0">
+    <h1>Search Candidates</h1>
+
+    <!-- Keywords Section -->
+    <div class="section">
+      <label>Keywords</label>
+      <div class="input-group-keywords">
+        <div class="keywords-section">
+          <button class="search-icon-btn">
+            <img src="searchIcon.svg" alt="Search">
+          </button>
+          <div class="tag">Web Development 
+            <button class="close-btn-keywords"><img src="close.svg" alt="Close"></button>
+          </div>
+          <div class="tag">App Development 
+            <button class="close-btn-keywords"><img src="close.svg" alt="Close"></button>
+          </div>
+          <span class="action-text">Clear all</span>
+          <span class="icon-new"><img src="IconNew.svg" alt="Icon"></span>
+        </div>
+
+        <div class="switch-btn">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Additional Options -->
+    <div class="section">
+      <div class="checkbox-group-keywords">
+        <input type="checkbox" id="mark-checkbox">
+        <small>Mark all keywords as mandatory</small>
+      </div>
+      <div class="add-button" id="addButton">
+        <img src="AddIcon.svg" alt="Icon" class="add-icon">
+        <span class="add-exclude">Add Exclude keywords</span>
+      </div>
+      
+      <div class="input-container" id="inputContainer"></div>
+      
+  </div>
+    
+    <!-- IT Skills -->
+    <div class="section">
+
+      <label>IT Skills</label>
+      <div class="input-group">
+        <div class="row">
+          <input type="text" placeholder="Enter The Skills" class="text-skills" />
+        </div>
+        <div class="row">
+          <select class="select-experience">
+            <option value="" disabled selected>Select Experience</option>
+            <option>1-2 years</option>
+            <option>2-5 years</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+      
+      <div class="checkbox-group">
+        <input type="checkbox" id="exclude-skills">
+        <label for="exclude-skills">Add It skills</label>
+      </div>
+    </div>
+    
+    <!-- Experience -->
+    <div class="section">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <label>IT Skills</label>
+          <div class="input-group-select">
+            <select>
+              <option value="" disabled selected>Select Experience years</option>
+              <option>1-2 years</option>
+              <option>2-5 years</option>
+            </select>
+            <select>
+              <option value="" disabled selected>Select Experience months</option>
+              <option>1-2 years</option>
+              <option>2-5 years</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Location -->
+    <div class="section">
+      <label>Current location of candidate</label>
+      <div class="input-group">
+        <input type="text" placeholder="Add Location">
+      </div>
+      <div class="tag">New Delhi 
+        <button class="close-btn"><img src="close.svg" alt="Close"></button>
+      </div>
+      <div class="tag">Mumbai
+        <button class="close-btn"><img src="close.svg" alt="Close"></button>
+      </div>
+      <div class="tag">Bangalore
+        <button class="close-btn"><img src="close.svg" alt="Close"></button>
+    </div>
+    
+    <!-- Salary -->
+    <div class="section">
+      <label>Annual Salary</label>
+      <div class="input-group-salary">
+        <select class="currency-select">
+          <option value="INR">INR</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+        <input type="number" placeholder="Minimum Salary">
+        <p>To</p>
+        <input type="number" placeholder="Maximum Salary">
+      </div>
+        <div class="tag">INR 10-5 lacs
+          <button class="close-btn"><img src="close.svg" alt="Close"></button>
+      </div>
+      <div class="tag">INR 10-5 lacs
+        <button class="close-btn"><img src="close.svg" alt="Close"></button>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="mandatory">
+        <label for="mandatory">include candidate who did not mention current sallary</label>
+      </div>
+      <div class="Employee-details">
+        <h2>Employee Details<h2>
+        <label for="employee-id">Department Roles</label>
+        <input type="text" placeholder="Add Department / Roles">
+        <div class="tag">Software Engineering
+          <button class="close-btn"><img src="close.svg" alt="Close"></button>
+        </div>
+        <div class="tag">Product Management
+          <button class="close-btn"><img src="close.svg" alt="Close"></button>
+    </div>
+    </div>
+    <div class="Industriry-details">
+      <h2>Industry</h2>
+      <input type="text" placeholder="Industry">
+      <div class="tag">IT services
+        <button class="close-btn"><img src="close.svg" alt="Close"></button>
+      </div>
+      <div class="Company-details">
+        <h2>Company Details<h2>
+          <button class="search-icon-btn">
+            <img src="searchIcon.svg" alt="Search">
+          </button>
+          <div class="tag">Company Name
+            <button class="close-btn"><img src="close.svg" alt="Close"></button>
+          </div>
+          <div class="tag">Company Name
+            <button class="close-btn"><img src="close.svg" alt="Close"></button>
+          </div>
+          <span class="action-text">Clear all</span>
+        </div>
+      </div>
+      <div class="designation-details">
+        <h2>Designation</h2>
+        <button class="search-icon-btn">
+          <img src="searchIcon.svg" alt="Search">
+        </button>
+        <div class="tag">Designation
+          <button class="close-btn"><img src="close.svg" alt="Close"></button>
+        </div>
+        <span class="action-text">Clear all</span>
+      </div>
+        <!-- Notice Period Section -->
+        <div class="form-section">
+            <h2>Notice Period</h2>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="notice_period" value="any" checked>
+                    Any
+                </label>
+                <label>
+                    <input type="radio" name="notice_period" value="0-15">
+                    0-15 days
+                </label>
+                <label>
+                    <input type="radio" name="notice_period" value="1-month">
+                    1 month
+                </label>
+                <label>
+                    <input type="radio" name="notice_period" value="2-months">
+                    2 months
+                </label>
+                <label>
+                    <input type="radio" name="notice_period" value="3-months">
+                    3 months
+                </label>
+                <label>
+                    <input type="radio" name="notice_period" value="more-than-3">
+                    More than 3 months
+                </label>
+                <label>
+                    <input type="radio" name="notice_period" value="serving">
+                    Currently serving notice period
+                </label>
+            </div>
+        </div>
+
+        <!-- Education Details Section -->
+        <div class="form-section">
+            <h2>Education Details</h2>
+            <div>
+                <h3>UG Qualification</h3>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="ug_qualification" value="any" checked>
+                        Any UG qualification
+                    </label>
+                    <label>
+                        <input type="radio" name="ug_qualification" value="specific">
+                        Specific UG qualification
+                    </label>
+                    <label>
+                        <input type="radio" name="ug_qualification" value="none">
+                        No UG qualification
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <h3>PG Qualification</h3>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="pg_qualification" value="any" checked>
+                        Any PG qualification
+                    </label>
+                    <label>
+                        <input type="radio" name="pg_qualification" value="specific">
+                        Specific PG qualification
+                    </label>
+                    <label>
+                        <input type="radio" name="pg_qualification" value="none">
+                        No PG qualification
+                    </label>
+                </div>
+            </div>
+            <div>
+              <h3>PPG Qualification</h3>
+              <div class="radio-group">
+                  <label>
+                      <input type="radio" name="pg_qualification" value="any" checked>
+                      Any PG qualification
+                  </label>
+                  <label>
+                      <input type="radio" name="pg_qualification" value="specific">
+                      Specific PG qualification
+                  </label>
+                  <label>
+                      <input type="radio" name="pg_qualification" value="none">
+                      No PG qualification
+                  </label>
+              </div>
+          </div>
+          <h3>Diversity details</h3>
+          <h4>Gender</h4>
+          <div class="radio-group">
+            <label>
+                <input type="radio" name="gender" value="any" checked>
+                All candidates
+            </label>
+            <label>
+                <input type="radio" name="gender" value="male">
+                Male candidates
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female">
+                Female candidates
+            </label>
+          </div>
+          <h4>Candidate Category</h4>
+          <button class="search-icon-btn">
+            <img src="searchIcon.svg" alt="Search">
+          </button>
+          <div class="tag">Add Candidate Category
+          </div>
+        </div>
+        <div class="tag">Add here
+          <button class="close-btn"><img src="close.svg" alt="Close"></button>
+        </div>
+        <h4>candidate age</h4>
+        <div class="candidate-age-range">
+        <input type="number" placeholder="Minimum Salary">
+        <p>To</p>
+        <input type="number" placeholder="Maximum Salary">
+        </div>
+        <h4>Work details</h4>
+        <label for="experience">Show candiates seeking</label>
+        <div class="keywords-section-workdetails">
+          <button class="search-icon-btn">
+            <img src="searchIcon.svg" alt="Search">
+          </button>
+          <div class="tag">Job type
+          </div>
+          <button class="search-icon-btn">
+            <img src="searchIcon.svg" alt="Search">
+          </button>
+          <div class="tag">Epmloyee type
+          </div>
+  </div>
+  <script src="script.js"></script>
+  <!-- bootstrap JS Link  -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
