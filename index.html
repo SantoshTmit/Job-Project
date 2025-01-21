@@ -41,8 +41,8 @@
     <!-- Additional Options -->
     <div class="section">
       <div class="checkbox-group-keywords">
-        <input type="checkbox" id="mark-checkbox">
-        <small>Mark all keywords as mandatory</small>
+        <input type="checkbox" class="chekbox-mondatory" id="mark-checkbox">
+        <small class="">Mark all keywords as mandatory</small>
       </div>
       <div class="add-button" id="addButton">
         <img src="AddIcon.svg" alt="Icon" class="add-icon">
@@ -55,41 +55,39 @@
     
     <!-- IT Skills -->
     <div class="section">
-
-      <label>IT Skills</label>
-      <div class="input-group">
-        <div class="row">
-          <input type="text" placeholder="Enter The Skills" class="text-skills" />
-        </div>
-        <div class="row">
-          <select class="select-experience">
-            <option value="" disabled selected>Select Experience</option>
-            <option>1-2 years</option>
-            <option>2-5 years</option>
-          </select>
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <label>IT skills</label>
+          <div class="input-group-select">
+            <input type="text" class="input-skills" placeholder="Add IT skills">
+            <select class="Experience-year">
+              <option value="" disabled selected>Select Experience months</option>
+              <option>1-2 years</option>
+              <option>2-5 years</option>
+            </select>
+          </div>
         </div>
       </div>
-    </div>
-    
+      <div class="add-button" id="addButton">
+        <img src="AddIcon.svg" alt="Icon" class="add-icon">
+        <span class="add-exclude">Add It Skiils</span>
+      </div>
       
-      <div class="checkbox-group">
-        <input type="checkbox" id="exclude-skills">
-        <label for="exclude-skills">Add It skills</label>
-      </div>
-    </div>
+      
+  </div>
     
     <!-- Experience -->
     <div class="section">
       <div class="row">
-        <div class="col-md-6 col-12">
-          <label>IT Skills</label>
+        <div class="col-md-6 col-12 ">
+          <label>Experience</label>
           <div class="input-group-select">
-            <select>
+            <select class="Experience-year">
               <option value="" disabled selected>Select Experience years</option>
               <option>1-2 years</option>
               <option>2-5 years</option>
             </select>
-            <select>
+            <select class="Experience-year">
               <option value="" disabled selected>Select Experience months</option>
               <option>1-2 years</option>
               <option>2-5 years</option>
@@ -102,16 +100,16 @@
     <div class="section">
       <label>Current location of candidate</label>
       <div class="input-group">
-        <input type="text" placeholder="Add Location">
+        <input type="text" class="Location-candiate" placeholder="Add Location">
       </div>
       <div class="tag">New Delhi 
-        <button class="close-btn"><img src="close.svg" alt="Close"></button>
+        <button class="close-btn-location"><img src="close.svg" alt="Close"></button>
       </div>
       <div class="tag">Mumbai
-        <button class="close-btn"><img src="close.svg" alt="Close"></button>
+        <button class="close-btn-location"><img src="close.svg" alt="Close"></button>
       </div>
       <div class="tag">Bangalore
-        <button class="close-btn"><img src="close.svg" alt="Close"></button>
+        <button class="close-btn-location"><img src="close.svg" alt="Close"></button>
     </div>
     
     <!-- Salary -->
@@ -123,9 +121,9 @@
           <option value="USD">USD</option>
           <option value="EUR">EUR</option>
         </select>
-        <input type="number" placeholder="Minimum Salary">
+        <input type="number" class="currency-select" placeholder="Minimum Salary">
         <p>To</p>
-        <input type="number" placeholder="Maximum Salary">
+        <input type="number" class="currency-select" placeholder="Maximum Salary">
       </div>
         <div class="tag">INR 10-5 lacs
           <button class="close-btn"><img src="close.svg" alt="Close"></button>
@@ -133,29 +131,29 @@
       <div class="tag">INR 10-5 lacs
         <button class="close-btn"><img src="close.svg" alt="Close"></button>
       </div>
-      <div class="checkbox-group">
-        <input type="checkbox" id="mandatory">
-        <label for="mandatory">include candidate who did not mention current sallary</label>
-      </div>
+      <div class="checkbox-group-keywords">
+        <input type="checkbox" id="mark-checkbox">
+        <small>include candidate who did not mention current sallary</small>
+
       <div class="Employee-details">
-        <h2>Employee Details<h2>
+        <label>Employee Details</label>
         <label for="employee-id">Department Roles</label>
-        <input type="text" placeholder="Add Department / Roles">
+        <input type="text" class="Epmloyee-details" placeholder="Add Department / Roles">
         <div class="tag">Software Engineering
-          <button class="close-btn"><img src="close.svg" alt="Close"></button>
+          <button class="close-btn-employee"><img src="close.svg" alt="Close"></button>
         </div>
         <div class="tag">Product Management
-          <button class="close-btn"><img src="close.svg" alt="Close"></button>
+          <button class="close-btn-employee"><img src="close.svg" alt="Close"></button>
     </div>
     </div>
-    <div class="Industriry-details">
-      <h2>Industry</h2>
-      <input type="text" placeholder="Industry">
+    <div class="section">
+      <lavel class="Industry-details">Industry</lavel>
+      <input type="text" class="Industry-details-input" placeholder="Industry">
       <div class="tag">IT services
         <button class="close-btn"><img src="close.svg" alt="Close"></button>
       </div>
       <div class="Company-details">
-        <h2>Company Details<h2>
+        <div class="company-details-font">Company Details</div>
           <button class="search-icon-btn">
             <img src="searchIcon.svg" alt="Search">
           </button>
@@ -169,7 +167,7 @@
         </div>
       </div>
       <div class="designation-details">
-        <h2>Designation</h2>
+        <div class="designation-details-font">Designation</div>
         <button class="search-icon-btn">
           <img src="searchIcon.svg" alt="Search">
         </button>
@@ -180,7 +178,7 @@
       </div>
         <!-- Notice Period Section -->
         <div class="form-section">
-            <h2>Notice Period</h2>
+            <div class="notice-period-label">Notice Period</lavel>
             <div class="radio-group">
                 <label>
                     <input type="radio" name="notice_period" value="any" checked>
@@ -215,9 +213,9 @@
 
         <!-- Education Details Section -->
         <div class="form-section">
-            <h2>Education Details</h2>
+            <div class="Education-details">Education Details</div>
             <div>
-                <h3>UG Qualification</h3>
+                <div class="UG-qualification">UG Qualification</div>
                 <div class="radio-group">
                     <label>
                         <input type="radio" name="ug_qualification" value="any" checked>
@@ -235,7 +233,7 @@
             </div>
 
             <div>
-                <h3>PG Qualification</h3>
+                <div class="Pg-qualification">PG Qualification</h3>
                 <div class="radio-group">
                     <label>
                         <input type="radio" name="pg_qualification" value="any" checked>
@@ -252,7 +250,7 @@
                 </div>
             </div>
             <div>
-              <h3>PPG Qualification</h3>
+              <div class="PPG-qualification">PPG Qualification</div>
               <div class="radio-group">
                   <label>
                       <input type="radio" name="pg_qualification" value="any" checked>
@@ -268,8 +266,8 @@
                   </label>
               </div>
           </div>
-          <h3>Diversity details</h3>
-          <h4>Gender</h4>
+          <div class="Diversity-details">Diversity details</h3>
+          <div class="gender-details">Gender</h4>
           <div class="radio-group">
             <label>
                 <input type="radio" name="gender" value="any" checked>
@@ -284,23 +282,22 @@
                 Female candidates
             </label>
           </div>
-          <h4>Candidate Category</h4>
+          <div class="candiates-category-details">Candidate Category</div>
           <button class="search-icon-btn">
             <img src="searchIcon.svg" alt="Search">
           </button>
-          <div class="tag">Add Candidate Category
-          </div>
+          <div class="tag">Add Candidate Category</div>
         </div>
         <div class="tag">Add here
-          <button class="close-btn"><img src="close.svg" alt="Close"></button>
+          <button class="close-btn-candidate-category"><img src="close.svg" alt="Close"></button>
         </div>
-        <h4>candidate age</h4>
+        <div class="candidate-age">Candidate age</div>
         <div class="candidate-age-range">
         <input type="number" placeholder="Minimum Salary">
         <p>To</p>
         <input type="number" placeholder="Maximum Salary">
         </div>
-        <h4>Work details</h4>
+        <lavel class="">Work details</lavel>
         <label for="experience">Show candiates seeking</label>
         <div class="keywords-section-workdetails">
           <button class="search-icon-btn">

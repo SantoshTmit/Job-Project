@@ -30,11 +30,15 @@ h1 {
 }
 
 .input-group-select {
+  background-color: #F8F8F8;
   margin-bottom: 15px;
   display: flex !important;
   justify-content: space-between;
   align-items: center; /* Keep everything in one row */
   gap: 10px;
+}
+.input-skills{
+  background-color: #f8f8f8;
 }
 
 label {
@@ -76,6 +80,7 @@ input[type="number"]{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  font-size: small;
 }
 
 .radio-group label {
@@ -83,7 +88,12 @@ input[type="number"]{
   align-items: center;
   gap: 5px;
 }
+.Experience-year{
+  background-color: #F8F8F8;
+  
+  gap: 5px;
 
+}
 input[type="radio"] {
   accent-color: #007bff;
 }
@@ -158,8 +168,8 @@ button {
 }
 .close-btn-keywords{
   position: absolute;
-  margin-right: 10px;
-  margin-left: 85px;
+  margin-left: 95px;
+  
   top: 2px;
   left: 60px;
   background: transparent;
@@ -303,10 +313,6 @@ gap: 10px;
     width: 95%;
   }
 
-  .input-group {
-    gap: 10px; 
-    flex-wrap: nowrap;
-  }
 
   .switch-btn {
     margin-left: 10px;
@@ -322,11 +328,6 @@ gap: 10px;
 @media (max-width: 768px) {
   h1 {
     font-size: 20px;
-  }
-
-  .input-group {
-    flex-wrap: nowrap; 
-    overflow-x: auto;
   }
 
   .switch-btn {
@@ -355,9 +356,88 @@ gap: 10px;
     height: 22px;
     width: 22px; 
   }
+}
+.Location-candiate{
+  background-color: #F8F8F8;
+}
+.currency-select{
+  background-color: #f8f8f8;
+}
+.Epmloyee-details{
+  background-color: #F8F8F8;
+}
+.Industry-details{
+  background-color: #F8F8F8;
+}
+.chekbox-mondatory{
+  margin-top: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.close-btn-location{
+  position: absolute;
+  margin-left: 50px;
+  top: 2px;
+  left: 60px;
+  background: transparent;
+  border: none;
+  color: #202020;
+  font-size: 12px;
+  cursor: pointer;
+}
+.close-btn-employee{
+  position: absolute;
+  margin-left: 120px;
+  top: 2px;
+  left: 60px;
+  background: transparent;
+  border: none;
+  color: #202020;
+  font-size: 12px;
+  cursor: pointer;
+}
+.Industry-details{
+  background: none;
+  font-size: 20px;
+}
+.Industry-details-input{
+  background-color: #F8F8F8;
+}
+.company-details-font{
+font-size: 20px;
+}
+.designation-details-font{
+  font-size: 20px;
+}
+.notice-period-label{
+  font-size: 20px;
+}
+.Education-details{
+  font-size: 20px;
+}
+.Pg-qualification{
+  font-size: 20px;
+}
+.PPG-qualification{
+  font-size: 20px;
+}
+.Diversity-details{
+  font-size: 20px;
+}
+.gender-details{
+  font-size: 20px;
+}
+.candiates-category-details{
+  font-size: 20px;
+}
+.close-btn-candidate-category{
+position: absolute;
+  margin-left: 2px;
+  top: 2px;
+  background: transparent;
+  border: none;
+  color: #202020;
+  font-size: 12px;
+  cursor: pointer;
 
-  .input-group {
-    flex-wrap: nowrap; 
-    overflow-x: auto; 
-  }
 }
