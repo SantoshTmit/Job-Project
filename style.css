@@ -1,28 +1,18 @@
 
 body {
-  font-family: Arial, sans-serif, Flex;
+  font-family: Roboto Flex;
   margin: 10px;
-  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
   box-sizing: border-box;
   background-color: #FFFFFF;
 }
 
-/* .container {
-  width: 90%;
-  margin: 20px auto;
-  padding: 20px;
-  background: #FFFFFF;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-} */
-
-h1 {
-  font-size: 24px;
-  color: #000000;
-  text-align: center;
-}
 .input-group-keywords{
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 15px;
   display: flex !important;
   justify-content: space-between;
   align-items: center; 
@@ -30,15 +20,18 @@ h1 {
 }
 
 .input-group-select {
-  background-color: #F8F8F8;
+  background-color: white;
   margin-bottom: 15px;
   display: flex !important;
   justify-content: space-between;
   align-items: center; /* Keep everything in one row */
   gap: 10px;
+
 }
 .input-skills{
   background-color: #f8f8f8;
+  border-radius: 20px 20px;
+  height: 50px;
 }
 
 label {
@@ -52,7 +45,7 @@ input[type="text"], select, button {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 20px 20px;
   font-size: 14px;
 }
 .Enter-the-skills{
@@ -63,33 +56,72 @@ input[type="text"], select, button {
 }
 .input-group-salary{
  
-  width: 40%;
+  width: 82%;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
-input[type="number"]{
-  width: 100%;
+/* input[type="number"]{
+  width: 95%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
-}
+} */
+ .currency-select-dropdown{
+  background-color: #F8F8F8;
+  border-radius: 20px 20px;
+  height: 50px;
+  width: 25%;
+ }
+ .currency-select{
+  background-color: #F8F8F8;
+  border-radius: 20px 20px;
+  height: 50px;
+  width: 90%;
+ }
+ .paragraph-salary-range{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+ }
+ .salary-chekbox{
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+ }
+ .paragraph-salary-range-paragrapph{
+  color: #818181;
+ }
 
 .radio-group {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 10px;
-  font-size: small;
+  font-size: 12px;
+  border-radius: 15px 15px;
+  color: #EAEAEA;
 }
 
 .radio-group label {
   display: flex;
   align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
   gap: 5px;
+  margin-top: 10px;
+  border: 2px solid #EAEAEA;
+  border-radius: 20px 20px;
+  height: 40px;
+  width: 17%;
 }
+
 .Experience-year{
   background-color: #F8F8F8;
+  border-radius: 20px 20px;
+  height: 50px;
   
   gap: 5px;
 
@@ -97,8 +129,14 @@ input[type="number"]{
 input[type="radio"] {
   accent-color: #007bff;
 }
+.candidate-age{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  font-size: 30px;
+}
 .candidate-age-range{
-  width: 30%;
+  width: 82%;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -115,12 +153,15 @@ button {
 .add-button {
   display: flex;
   color: #202020;
-  border-radius: 10px 10px;
+  border-radius: 15px 15px;
   background: #F8F8F8;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 16px;
   text-align: center;
-  width: 30%;        
+  width: 25%;        
   cursor: pointer;
+  
 }
 
 .add-button:hover {
@@ -135,15 +176,24 @@ button {
 
 .input-container {
   margin-top: 20px;
+  width: 82%;
+}
+.input-container-skills{
+  margin-top: 20px;
+  width: 82%;
 }
 
 .input-field {
   display: block;
   margin-bottom: 10px;
 }
+.input-field-skills{
+  display: block;
+  margin-bottom: 10px;
+}
 
 /* input[type="text"] {
-  width: 100%;
+  width: 90%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -156,14 +206,34 @@ button {
   gap: 8px;
   margin-bottom: 15px;
 }
-
-.tag {
+.Search-keywords{
   display: inline-block;
   padding: 10px 50px;
   background: #FFFFFF;
   color: #202020;
   border-radius: 15px;
   font-size: 14px;
+  position: relative;
+}
+
+.tag-salary-range {
+  display: inline-block;
+  padding: 10px 50px;
+  background: #f8f8f8;
+  color: #202020;
+  border-radius:15px;
+  font-size: 15px;
+  position: relative;
+  height: 50px;
+  text-align: center;
+}
+.tag{
+  display: inline-block;
+  padding: 10px 50px;
+  
+  color: #202020;
+  border-radius: 15px;
+  font-size: 15px;
   position: relative;
 }
 .close-btn-keywords{
@@ -195,30 +265,29 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex: 1;
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 8px;
+  width: 82%;
+  border-radius: 10px;
   background: #F8F8F8;
 }
 
 .switch-btn {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .search-icon-btn {
   border: none;
   background: none;
   width: 20px;
-  height: 20px;
+  text-align: center;
   margin-bottom: 10px;
 }
 
 .icon-new {
-  margin-top: 7px;
+  text-align: center;
   margin-left: auto;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+   height: 18px;
+  
 }
 
 .switch {
@@ -268,7 +337,7 @@ input:checked + .slider:before {
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 15px 15px;
 }
 
 .slider.round:before {
@@ -317,12 +386,6 @@ gap: 10px;
   .switch-btn {
     margin-left: 10px;
   }
-
-  .icon-new {
-    text-align: center;
-    width: 18px;
-    height: 18px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -332,10 +395,6 @@ gap: 10px;
 
   .switch-btn {
     margin-left: 10px;
-  }
-
-  .icon-new {
-    display: none; 
   }
 }
 @media (max-width: 480px) {
@@ -359,15 +418,53 @@ gap: 10px;
 }
 .Location-candiate{
   background-color: #F8F8F8;
+  padding: 10px;
+  height: 50px;
+  width: 90%;
+  font-size: 20px;
+}
+.tag-location{
+  display: inline-block;
+  padding: 10px 50px;
+  margin-top: 20px;
+  background: #f8f8f8;
+  color: #202020;
+  border-radius:15px;
+  font-size: 15px;
+  position: relative;
+  height: 40px;
+  text-align: center;
+}
+.input-group-location{
+  margin-top: 20px;
+  padding:10px;
+  margin-bottom: 20px;
+  width: 83%;
+  height: 25px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px
 }
 .currency-select{
   background-color: #f8f8f8;
+
 }
 .Epmloyee-details{
   background-color: #F8F8F8;
 }
+.Epmloyee-details-input{
+  padding: 5px;
+  background-color: #F8F8F8;
+  margin-right: 10px;
+  width: 82%;
+  border-radius: 20px 20px;
+  font-size: 20px;
+}
 .Industry-details{
   background-color: #F8F8F8;
+  font-size: 15px;
+  font-weight: bold;
 }
 .chekbox-mondatory{
   margin-top: 10px;
@@ -401,31 +498,58 @@ gap: 10px;
   font-size: 20px;
 }
 .Industry-details-input{
+  flex-wrap: wrap;
   background-color: #F8F8F8;
+  padding: 5px;
+  margin-right: 50px;
+  width:  82%;
+  border-radius: 20px 20px;
 }
 .company-details-font{
-font-size: 20px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 .designation-details-font{
   font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
 }
 .notice-period-label{
-  font-size: 20px;
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: bold;
 }
 .Education-details{
   font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.UG-qualification{
+  font-size: 15px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 .Pg-qualification{
-  font-size: 20px;
+  font-size: 15px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 .PPG-qualification{
-  font-size: 20px;
+  font-size: 15px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 .Diversity-details{
   font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
 }
 .gender-details{
   font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
 }
 .candiates-category-details{
   font-size: 20px;
@@ -441,3 +565,126 @@ position: absolute;
   cursor: pointer;
 
 }
+.Header{
+  font-size: 25px;
+}
+.checkbox-group-keywords{
+ font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.Employee-details-header{
+  font-size: 15px;
+  margin-top: 10px;
+}
+.employe-role{
+  font-size: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.tag-role{
+  display: inline-block;
+  text-align: center;
+  padding: 10px 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #f8f8f8;
+  color: #202020;
+  border-radius:15px;
+  font-size: 14px;
+  position: relative;
+  height: 40px;
+ 
+}
+.tag-industry-details{
+
+  display: inline-block;
+  text-align: center;
+  width: 15%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #f8f8f8;
+  color: #202020;
+  border-radius:15px;
+  font-size: 16px;
+  position: relative;
+  height: 40px;
+}
+.tag-candiadate-category{
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #F8F8F8;
+  color: #202020;
+  border-radius:15px;
+  font-size: 16px;
+  position: relative;
+  height: 40px;
+}
+.input-candidate-category{
+  flex-wrap: wrap;
+  background-color: #F8F8F8;
+  padding: 5px;
+  margin-right: 50px;
+  width:  82%;
+  border-radius: 20px 20px;
+  font-size: 20px;
+}
+.paragraf-candidate-add{
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.Add-here-paragraf{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 50px;
+  background: #F8F8F8;
+  color: #202020;
+  border-radius: 15px;
+  font-size: 14px;
+  position: relative;
+}
+.close-btn-add-here{
+  position: absolute;
+  margin-left: 95px;
+  
+  top: 2px;
+  left: 60px;
+  background: transparent;
+  border: none;
+  color: #202020;
+  font-size: 12px;
+  cursor: pointer;
+}
+.currency-select-age{
+  background-color: #F8F8F8;
+  border-radius: 20px 20px;
+  height: 50px;
+  width: 80%;
+ 
+}
+.paragraph-age-range{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+ }
+ .work-details-header{
+   font-size: 30px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+ .job-type-details{
+  background-color: #F8F8F8;
+  border-radius: 20px 20px;
+  height: 50px;
+ }
+ .Employeement-type-details{
+  background-color: #F8F8F8;
+  border-radius: 20px 20px;
+  height: 50px;
+ }

@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="container-fluid g-0">
-    <h1>Search Candidates</h1>
+    <lavel class="Header">Search Candidates</lavel>
 
     <!-- Keywords Section -->
     <div class="section">
@@ -20,10 +20,10 @@
           <button class="search-icon-btn">
             <img src="searchIcon.svg" alt="Search">
           </button>
-          <div class="tag">Web Development 
+          <div class="Search-keywords">Web Development 
             <button class="close-btn-keywords"><img src="close.svg" alt="Close"></button>
           </div>
-          <div class="tag">App Development 
+          <div class="Search-keywords">App Development 
             <button class="close-btn-keywords"><img src="close.svg" alt="Close"></button>
           </div>
           <span class="action-text">Clear all</span>
@@ -56,7 +56,7 @@
     <!-- IT Skills -->
     <div class="section">
       <div class="row">
-        <div class="col-md-6 col-12">
+        <div class="col-md-10 col-18 ">
           <label>IT skills</label>
           <div class="input-group-select">
             <input type="text" class="input-skills" placeholder="Add IT skills">
@@ -68,18 +68,17 @@
           </div>
         </div>
       </div>
-      <div class="add-button" id="addButton">
+      <div class="add-button" id="addButtonskills">
         <img src="AddIcon.svg" alt="Icon" class="add-icon">
         <span class="add-exclude">Add It Skiils</span>
       </div>
-      
-      
+      <div class="input-container-skills" id="inputContainerskills"></div>
   </div>
     
     <!-- Experience -->
     <div class="section">
       <div class="row">
-        <div class="col-md-6 col-12 ">
+        <div class="col-md-10 col-18 ">
           <label>Experience</label>
           <div class="input-group-select">
             <select class="Experience-year">
@@ -99,16 +98,16 @@
     <!-- Location -->
     <div class="section">
       <label>Current location of candidate</label>
-      <div class="input-group">
+      <div class="input-group-location">
         <input type="text" class="Location-candiate" placeholder="Add Location">
       </div>
-      <div class="tag">New Delhi 
+      <div class="tag-location">New Delhi 
         <button class="close-btn-location"><img src="close.svg" alt="Close"></button>
       </div>
-      <div class="tag">Mumbai
+      <div class="tag-location">Mumbai
         <button class="close-btn-location"><img src="close.svg" alt="Close"></button>
       </div>
-      <div class="tag">Bangalore
+      <div class="tag-location">Bangalore
         <button class="close-btn-location"><img src="close.svg" alt="Close"></button>
     </div>
     
@@ -116,72 +115,73 @@
     <div class="section">
       <label>Annual Salary</label>
       <div class="input-group-salary">
-        <select class="currency-select">
+        <select class="currency-select-dropdown">
           <option value="INR">INR</option>
           <option value="USD">USD</option>
           <option value="EUR">EUR</option>
         </select>
         <input type="number" class="currency-select" placeholder="Minimum Salary">
-        <p>To</p>
+        <p class="paragraph-salary-range">To</p>
         <input type="number" class="currency-select" placeholder="Maximum Salary">
       </div>
-        <div class="tag">INR 10-5 lacs
+        <div class="tag-salary-range">INR 10-5 lacs
           <button class="close-btn"><img src="close.svg" alt="Close"></button>
       </div>
-      <div class="tag">INR 10-5 lacs
+      <div class="tag-salary-range">INR 10-5 lacs
         <button class="close-btn"><img src="close.svg" alt="Close"></button>
       </div>
       <div class="checkbox-group-keywords">
-        <input type="checkbox" id="mark-checkbox">
-        <small>include candidate who did not mention current sallary</small>
+        <input type="checkbox" class="salary-chekbox" id="mark-checkbox">
+        <small class="paragraph-salary-range-paragrapph">Include candidate who did not mention current sallary</small>
 
       <div class="Employee-details">
-        <label>Employee Details</label>
-        <label for="employee-id">Department Roles</label>
-        <input type="text" class="Epmloyee-details" placeholder="Add Department / Roles">
-        <div class="tag">Software Engineering
+        <label class="Employee-details-header">Employee Details</label>
+        <div class="employe-role">Department Roles</label></div>
+        <input  class="Epmloyee-details-input" placeholder="Add Department / Roles">
+        <div class="tag-role">Software Engineering
           <button class="close-btn-employee"><img src="close.svg" alt="Close"></button>
         </div>
-        <div class="tag">Product Management
+        <div class="tag-role">Product Management
           <button class="close-btn-employee"><img src="close.svg" alt="Close"></button>
     </div>
     </div>
     <div class="section">
-      <lavel class="Industry-details">Industry</lavel>
-      <input type="text" class="Industry-details-input" placeholder="Industry">
-      <div class="tag">IT services
+      <div class="Industry-details">Industry</div>
+      <input  class="Industry-details-input" placeholder="Industry">
+      <div class="tag-industry-details">IT services
         <button class="close-btn"><img src="close.svg" alt="Close"></button>
       </div>
       <div class="Company-details">
         <div class="company-details-font">Company Details</div>
-          <button class="search-icon-btn">
-            <img src="searchIcon.svg" alt="Search">
-          </button>
-          <div class="tag">Company Name
-            <button class="close-btn"><img src="close.svg" alt="Close"></button>
+        <div class="input-group-keywords">
+          <div class="keywords-section">
+            <button class="search-icon-btn">
+              <img src="searchIcon.svg" alt="Search">
+            </button>
+            <div class="Search-keywords">Company Name 
+              <button class="close-btn-keywords"><img src="close.svg" alt="Close"></button>
+            </div>
+            <div class="Search-keywords">Company Name
+              <button class="close-btn-keywords"><img src="close.svg" alt="Close"></button>
+            </div>
+            <span class="action-text">Clear all</span>
+            <span class="icon-new"><img src="IconNew.svg" alt="Icon"></span>
           </div>
-          <div class="tag">Company Name
-            <button class="close-btn"><img src="close.svg" alt="Close"></button>
+  
+          <div class="switch-btn">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
           </div>
-          <span class="action-text">Clear all</span>
         </div>
-      </div>
-      <div class="designation-details">
-        <div class="designation-details-font">Designation</div>
-        <button class="search-icon-btn">
-          <img src="searchIcon.svg" alt="Search">
-        </button>
-        <div class="tag">Designation
-          <button class="close-btn"><img src="close.svg" alt="Close"></button>
-        </div>
-        <span class="action-text">Clear all</span>
       </div>
         <!-- Notice Period Section -->
         <div class="form-section">
             <div class="notice-period-label">Notice Period</lavel>
             <div class="radio-group">
                 <label>
-                    <input type="radio" name="notice_period" value="any" checked>
+                    <input type="radio" class="radio-button" name="notice_period" value="any" checked>
                     Any
                 </label>
                 <label>
@@ -283,34 +283,40 @@
             </label>
           </div>
           <div class="candiates-category-details">Candidate Category</div>
-          <button class="search-icon-btn">
-            <img src="searchIcon.svg" alt="Search">
-          </button>
-          <div class="tag">Add Candidate Category</div>
+          <div class="input-group-candidate-category">
+          <input class="input-candidate-category" placeholder="Add Candidate Category" >
+          </div>
         </div>
-        <div class="tag">Add here
-          <button class="close-btn-candidate-category"><img src="close.svg" alt="Close"></button>
+        </div>
+        <div class="Add-here-paragraf">Add here 
+          <button class="close-btn-add-here"><img src="close.svg" alt="Close"></button>
         </div>
         <div class="candidate-age">Candidate age</div>
         <div class="candidate-age-range">
-        <input type="number" placeholder="Minimum Salary">
-        <p>To</p>
-        <input type="number" placeholder="Maximum Salary">
-        </div>
-        <lavel class="">Work details</lavel>
+        <input class="currency-select-age" placeholder="Min Age">
+        <p class="paragraph-age-range">To</p>
+        <input class="currency-select-age" placeholder="Max Age">
+      </div>
+        <div class="work-details-header">Work details</div>
         <label for="experience">Show candiates seeking</label>
-        <div class="keywords-section-workdetails">
-          <button class="search-icon-btn">
-            <img src="searchIcon.svg" alt="Search">
-          </button>
-          <div class="tag">Job type
+        <div class="section">
+          <div class="row">
+            <div class="col-md-10 col-18 ">
+              <label>Experience</label>
+              <div class="input-group-select">
+                <select class="job-type-details">
+                  <option value="" disabled selected>job type</option>
+                  <option>1-2 years</option>
+                  <option>2-5 years</option>
+                </select>
+                <select class="Employeement-type-details">
+                  <option value="" disabled selected>Employement type</option>
+                  <option>1-2 years</option>
+                  <option>2-5 years</option>
+                </select>
+              </div>
+            </div>
           </div>
-          <button class="search-icon-btn">
-            <img src="searchIcon.svg" alt="Search">
-          </button>
-          <div class="tag">Epmloyee type
-          </div>
-  </div>
   <script src="script.js"></script>
   <!-- bootstrap JS Link  -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
