@@ -1,10 +1,10 @@
 
 body {
   font-family: Roboto Flex;
-  margin: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px;
+  margin: 35px;
+  margin-left: 30px;
+  margin-right: 35px;
+  padding: 30px;
   box-sizing: border-box;
   background-color: #FFFFFF;
 }
@@ -14,7 +14,6 @@ body {
   margin-bottom: 20px;
   height: 15px;
   display: flex !important;
-  justify-content: space-between;
   align-items: center; 
   gap: 10px
 }
@@ -120,7 +119,7 @@ input[type="text"], select, button {
 
 .Experience-year{
   background-color: #F8F8F8;
-  border-radius: 20px 20px;
+  border-radius: 10px 10px;
   height: 50px;
   
   gap: 5px;
@@ -153,7 +152,7 @@ button {
 .add-button {
   display: flex;
   color: #202020;
-  border-radius: 15px 15px;
+  border-radius: 10px 10px;
   background: #F8F8F8;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -211,7 +210,7 @@ button {
   padding: 10px 50px;
   background: #FFFFFF;
   color: #202020;
-  border-radius: 15px;
+  border-radius: 10px;
   font-size: 14px;
   position: relative;
 }
@@ -269,11 +268,6 @@ button {
   border-radius: 10px;
   background: #F8F8F8;
 }
-
-.switch-btn {
-  margin-left: 40px;
-}
-
 .search-icon-btn {
   border: none;
   background: none;
@@ -289,9 +283,18 @@ button {
    height: 18px;
   
 }
-
+.switch-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+.switch-text {
+  font-size: 12px;
+  color: #333;
+}
 .switch {
   position: relative;
+  display: inline-block;
   width: 60px;
   height: 34px;
 }
@@ -337,7 +340,7 @@ input:checked + .slider:before {
 }
 
 .slider.round {
-  border-radius: 15px 15px;
+  border-radius: 10px 10px;
 }
 
 .slider.round:before {
@@ -429,7 +432,7 @@ gap: 10px;
   margin-top: 20px;
   background: #f8f8f8;
   color: #202020;
-  border-radius:15px;
+  border-radius:10px;
   font-size: 15px;
   position: relative;
   height: 40px;
@@ -458,7 +461,7 @@ gap: 10px;
   background-color: #F8F8F8;
   margin-right: 10px;
   width: 82%;
-  border-radius: 20px 20px;
+  border-radius: 10px 10px;
   font-size: 20px;
 }
 .Industry-details{
@@ -503,7 +506,7 @@ gap: 10px;
   padding: 5px;
   margin-right: 50px;
   width:  82%;
-  border-radius: 20px 20px;
+  border-radius: 10px 10px;
 }
 .company-details-font{
   font-size: 20px;
@@ -590,7 +593,7 @@ position: absolute;
   margin-bottom: 10px;
   background: #f8f8f8;
   color: #202020;
-  border-radius:15px;
+  border-radius:10px;
   font-size: 14px;
   position: relative;
   height: 40px;
@@ -605,7 +608,7 @@ position: absolute;
   margin-bottom: 10px;
   background: #f8f8f8;
   color: #202020;
-  border-radius:15px;
+  border-radius:10px;
   font-size: 16px;
   position: relative;
   height: 40px;
@@ -618,7 +621,7 @@ position: absolute;
   margin-bottom: 10px;
   background: #F8F8F8;
   color: #202020;
-  border-radius:15px;
+  border-radius:10px;
   font-size: 16px;
   position: relative;
   height: 40px;
@@ -629,7 +632,7 @@ position: absolute;
   padding: 5px;
   margin-right: 50px;
   width:  82%;
-  border-radius: 20px 20px;
+  border-radius: 10px 10px;
   font-size: 20px;
 }
 .paragraf-candidate-add{
@@ -643,7 +646,7 @@ position: absolute;
   padding: 10px 50px;
   background: #F8F8F8;
   color: #202020;
-  border-radius: 15px;
+  border-radius: 10px;
   font-size: 14px;
   position: relative;
 }
@@ -661,7 +664,7 @@ position: absolute;
 }
 .currency-select-age{
   background-color: #F8F8F8;
-  border-radius: 20px 20px;
+  border-radius: 10px 10px;
   height: 50px;
   width: 80%;
  
@@ -680,7 +683,7 @@ position: absolute;
  }
  .job-type-details{
   background-color: #F8F8F8;
-  border-radius: 20px 20px;
+  border-radius: 10px 10px;
   height: 50px;
  }
  .Employeement-type-details{
