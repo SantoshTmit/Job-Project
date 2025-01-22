@@ -23,7 +23,7 @@ body {
   margin-bottom: 15px;
   display: flex !important;
   justify-content: space-between;
-  align-items: center; /* Keep everything in one row */
+  align-items: center; 
   gap: 10px;
 
 }
@@ -112,11 +112,16 @@ input[type="text"], select, button {
   gap: 5px;
   margin-top: 10px;
   border: 2px solid #EAEAEA;
-  border-radius: 20px 20px;
+  border-radius: 10px 10px;
   height: 40px;
   width: 17%;
 }
 
+.radio{
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
 .Experience-year{
   background-color: #F8F8F8;
   border-radius: 10px 10px;
@@ -129,10 +134,10 @@ input[type="radio"] {
   accent-color: #007bff;
 }
 .candidate-age{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  font-size: 30px;
+  margin-top: 10px;
+  font-family: Roboto Flex;
+  font-weight: bold;
+  font-size: 20px;
 }
 .candidate-age-range{
   width: 82%;
@@ -509,6 +514,7 @@ gap: 10px;
   border-radius: 10px 10px;
 }
 .company-details-font{
+  font-family: Roboto Flex;
   font-size: 20px;
   margin-bottom: 30px;
   margin-top: 20px;
@@ -520,6 +526,7 @@ gap: 10px;
   font-weight: bold;
 }
 .notice-period-label{
+  font-family: Roboto Flex;
   font-size: 15px;
   margin-top: 10px;
   font-weight: bold;

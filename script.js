@@ -14,7 +14,7 @@ document.querySelector('.action-text').addEventListener('click', function () {
 
 document.getElementById('addButton').addEventListener('click', function() {
   const inputContainer = document.getElementById('inputContainer');
-
+  if (!inputContainer.querySelector('.input-field')) {
   // Create a new input field
   const newInput = document.createElement('input');
   newInput.type = 'text';
@@ -23,21 +23,26 @@ document.getElementById('addButton').addEventListener('click', function() {
 
   // Append the new input field to the container
   inputContainer.appendChild(newInput);
+  }
 });
 
 // add skill function for skills
-document.getElementById('addButtonskills').addEventListener('click', function() {
+document.getElementById('addButtonskills').addEventListener('click', function () {
   const inputContainer = document.getElementById('inputContainerskills');
 
-  // Create a new input field
-  const newInput = document.createElement('input');
-  newInput.type = 'text';
-  newInput.placeholder = 'Enter keyword';
-  newInput.className = 'input-field-skills';
+  // Check if an input field already exists in the container
+  if (!inputContainer.querySelector('.input-field-skills')) {
+    // Create a new input field
+    const newInput = document.createElement('input');
+    newInput.type = 'text';
+    newInput.placeholder = 'Enter keyword';
+    newInput.className = 'input-field-skills';
 
-  // Append the new input field to the container
-  inputContainer.appendChild(newInput);
+    // Append the new input field to the container
+    inputContainer.appendChild(newInput);
+  }
 });
+
 
 
 
