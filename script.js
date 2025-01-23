@@ -44,5 +44,12 @@ document.getElementById('addButtonskills').addEventListener('click', function ()
 });
 
 
+//Serch buttton function
+document.getElementById('searchButton').addEventListener('click', () => {
+  alert('Searching candidates...');
+  // Add functionality here (e.g., navigate to a search page or perform a search)
+});
+
+
 
 

@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.candidate-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+}
+
+.candidate-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background: #ddd;
+}
+
+.candidate-details {
+    flex-grow: 1;
+}
+
+.candidate-details h2 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.candidate-details p {
+    margin: 5px 0;
+}
+
+.candidate-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.candidate-actions button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.call-button {
+    background-color: #28a745;
+}
+
+.details-button {
+    background-color: #007bff;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.controls label {
+    margin-right: 10px;
+}
+
+.controls .pagination {
+    display: flex;
+    gap: 10px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}

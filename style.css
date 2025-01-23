@@ -29,8 +29,10 @@ body {
 }
 .input-skills{
   background-color: #f8f8f8;
-  border-radius: 20px 20px;
-  height: 50px;
+  border-radius: 10px 10px;
+  margin-right: 20px;
+  width: 82%;
+  height: 48px;
 }
 
 label {
@@ -40,12 +42,17 @@ label {
   color: #202020;
 }
 
-input[type="text"], select, button {
-  width: 100%;
+input[type="text"], button {
+  width: 82%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 20px 20px;
+  border-radius: 10px 10px;
   font-size: 14px;
+}
+.select{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px 10px;
 }
 .Enter-the-skills{
   width: 40%;
@@ -69,20 +76,27 @@ input[type="text"], select, button {
 } */
  .currency-select-dropdown{
   background-color: #F8F8F8;
-  border-radius: 20px 20px;
+  border-radius: 10px 10px;
   height: 50px;
   width: 25%;
  }
  .currency-select{
   background-color: #F8F8F8;
-  border-radius: 20px 20px;
+  border-radius: 10px 10px;
   height: 50px;
   width: 90%;
  }
+ .currency-select-text{
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+ }
  .paragraph-salary-range{
   margin-top: 10px;
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
  }
  .salary-chekbox{
   width: 15px;
@@ -97,7 +111,6 @@ input[type="text"], select, button {
 .radio-group {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   gap: 10px;
   font-size: 12px;
   border-radius: 15px 15px;
@@ -113,7 +126,7 @@ input[type="text"], select, button {
   margin-top: 10px;
   border: 2px solid #EAEAEA;
   border-radius: 10px 10px;
-  height: 40px;
+  height: 45px;
   width: 17%;
 }
 
@@ -122,17 +135,41 @@ input[type="text"], select, button {
   height: 15px;
   margin-right: 10px;
 }
-.Experience-year{
-  background-color: #F8F8F8;
-  border-radius: 10px 10px;
-  height: 50px;
-  
-  gap: 5px;
-
-}
-input[type="radio"] {
+.input[type="radio"] {
+  display: flex;
   accent-color: #007bff;
 }
+.Experience-year{
+  width: 85%;
+  background-color: #F8F8F8;
+  border-radius: 10px 10px;
+  height: 48px;
+
+
+}
+.Experience-year-one{
+  width: 85%;
+  background-color: #F8F8F8;
+  border-radius: 10px 10px;
+  height: 48px;
+ gap: 10px;
+  margin-right: 35px;
+}
+.Experience-year-two{
+  width: 85%;
+  background-color: #F8F8F8;
+  border-radius: 10px 10px;
+  height: 48px;
+  margin-right: 10px;
+}
+.Experience-year-skills{
+  width: 82%;
+  background-color: #F8F8F8;
+  border-radius: 10px 10px;
+  height: 48px;
+  gap: 5px;
+}
+
 .candidate-age{
   margin-top: 10px;
   font-family: Roboto Flex;
@@ -140,10 +177,19 @@ input[type="radio"] {
   font-size: 20px;
 }
 .candidate-age-range{
-  width: 82%;
+  width: 80%;
   display: flex;
   align-items: center;
-  gap: 5px;
+}
+.currency-select-age{
+  display: flex;
+  font-family: Roboto Flex;
+  font-size: 14px;
+  background-color: #F8F8F8;
+  border-radius: 10px 10px;
+  height: 50px;
+  width: 80%;
+ 
 }
 button {
   width: 20%;
@@ -161,11 +207,22 @@ button {
   background: #F8F8F8;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 16px;
+  padding: 10px;
+  height: 46px;
   text-align: center;
-  width: 25%;        
+  width: 270px;        
   cursor: pointer;
   
+}
+.add-button-company{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  height: 46px;
+  text-align: center;
+  width: 270px;        
+  cursor: pointer;
 }
 
 .add-button:hover {
@@ -187,14 +244,6 @@ button {
   width: 82%;
 }
 
-.input-field {
-  display: block;
-  margin-bottom: 10px;
-}
-.input-field-skills{
-  display: block;
-  margin-bottom: 10px;
-}
 
 /* input[type="text"] {
   width: 90%;
@@ -209,15 +258,244 @@ button {
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 15px;
+}/* No code was selected, so I will provide a general improvement to the CSS code */
+
+/* Improved CSS Code */
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.Search-keywords{
+
+body {
+  font-family: Roboto Flex;
+  margin: 35px;
+  margin-left: 30px;
+  margin-right: 35px;
+  padding: 30px;
+  background-color: #FFFFFF;
+}
+
+/* Input Group Styles */
+
+.input-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-group-keywords {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-group-select {
+  background-color: white;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-skills {
+  background-color: #f8f8f8;
+  border-radius: 10px 10px;
+  margin-right: 20px;
+  width: 82%;
+  height: 48px;
+}
+
+/* Label Styles */
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #202020;
+}
+
+/* Input Styles */
+
+input[type="text"],
+button {
+  width: 82%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px 10px;
+  font-size: 14px;
+}
+
+input[type="radio"] {
+  display: flex;
+  accent-color: #007bff;
+}
+
+/* Select Styles */
+
+.select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px 10px;
+}
+
+/* Button Styles */
+
+button {
+  width: 20%;
+  padding: 10px 20px;
+  background-color: #F8F8F8;
+  color: #202020;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button {
+  display: flex;
+  color: #202020;
+  border-radius: 10px 10px;
+  background: #F8F8F8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 46px;
+  text-align: center;
+  width: 270px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #F8F8F8;
+}
+
+/* Tag Styles */
+
+.tag {
   display: inline-block;
   padding: 10px 50px;
+  color: #202020;
+  border-radius: 15px;
+  font-size: 15px;
+  position: relative;
+}
+
+.tag .close-btn {
+  position: absolute;
+  margin-right: 10px;
+  margin-left: 85px;
+  top: 2px;
+  left: 60px;
+  background: transparent;
+  border: none;
+  color: #202020;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Switch Styles */
+
+.switch-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.switch-text {
+  font-size: 12px;
+  color: #333;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  left: 5px;
+  bottom: 6px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #BDC3C7;
+}
+
+input:checked + .slider:before {
+  transform: translateX(5px);
+}
+
+.slider.round {
+  border-radius: 20px 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+
+  .switch-btn {
+    margin-left: 10px;
+  }
+}
+  .tag {
+    padding: 5px 20px}
+  .Search-keywords{
+  text-align: center;
+  padding: 10px 50px;
+  border-radius: 20px 20px;
   background: #FFFFFF;
   color: #202020;
-  border-radius: 10px;
+  border-radius: 20px 20px;
+  height: 32px;
   font-size: 14px;
   position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .tag-salary-range {
@@ -269,7 +547,8 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 82%;
+  width: 83%;
+  height: 48px;
   border-radius: 10px;
   background: #F8F8F8;
 }
@@ -278,13 +557,14 @@ button {
   background: none;
   width: 20px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .icon-new {
   text-align: center;
-  margin-left: auto;
-  width: 18px;
+  margin-left: 440px;
+  margin-bottom: 10px;
+  width: 15px;
    height: 18px;
   
 }
@@ -300,8 +580,8 @@ button {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 35px;
+  height: 20px;
 }
 
 .switch input {
@@ -313,6 +593,7 @@ button {
 .slider {
   position: absolute;
   cursor: pointer;
+  text-align: center;
   top: 0;
   left: 0;
   right: 0;
@@ -324,10 +605,10 @@ button {
 .slider:before {
   position: absolute;
   content: "";
-  height: 15px;
-  width: 15px;
-  left: 9px;
-  bottom: 9px;
+  height: 8px;
+  width: 8px;
+  left: 5px;
+  bottom: 6px;
   background-color: white;
   transition: .4s;
 }
@@ -341,15 +622,20 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  transform: translateX(5px);
 }
 
 .slider.round {
-  border-radius: 10px 10px;
+  border-radius: 20px 20px;
 }
 
 .slider.round:before {
   border-radius: 50%;
+}
+.swich-text{
+  margin-right: 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 .checkbox-group-kaywords {
   display: flex;
@@ -369,7 +655,8 @@ gap: 10px;
 }
 
 .checkbox-group input[type="checkbox"] {
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-left: 20x;
 }
 
 .action-text {
@@ -404,12 +691,6 @@ gap: 10px;
   .switch-btn {
     margin-left: 10px;
   }
-}
-@media (max-width: 480px) {
-  h1 {
-    font-size: 18px;
-  }
-
   .tag {
     padding: 5px 20px;
   }
@@ -424,37 +705,43 @@ gap: 10px;
     width: 22px; 
   }
 }
+.mark-mondaray-text{
+  font-size: 14px;
+  margin-top: 10px;
+}
 .Location-candiate{
   background-color: #F8F8F8;
   padding: 10px;
-  height: 50px;
-  width: 90%;
-  font-size: 20px;
+  height: 48px;
+  width: 94%;
+  font-size: 14px;
+  border-radius: 10px 10px;
 }
 .tag-location{
   display: inline-block;
   padding: 10px 50px;
-  margin-top: 20px;
+  margin-top: 10px;
   background: #f8f8f8;
   color: #202020;
   border-radius:10px;
-  font-size: 15px;
+  font-size: 14px;
   position: relative;
-  height: 40px;
+  height: 48px;
   text-align: center;
 }
 .input-group-location{
-  margin-top: 20px;
+  margin-top: 10px;
   padding:10px;
-  margin-bottom: 20px;
-  width: 83%;
-  height: 25px;
+  margin-bottom: 10px;
+  width: 88%;
+  height: 48px;
   display: flex !important;
-  justify-content: space-between;
   align-items: center;
-  gap: 10px
+  
 }
 .currency-select{
+  margin-top: 15px;
+  margin-bottom: 15px;
   background-color: #f8f8f8;
 
 }
@@ -462,16 +749,19 @@ gap: 10px;
   background-color: #F8F8F8;
 }
 .Epmloyee-details-input{
+  font-family: Roboto Flex;
   padding: 5px;
   background-color: #F8F8F8;
   margin-right: 10px;
   width: 82%;
   border-radius: 10px 10px;
-  font-size: 20px;
+  font-size: 14px;
+  height: 48px;
 }
 .Industry-details{
+  font-family: Roboto Flex;
   background-color: #F8F8F8;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
 }
 .chekbox-mondatory{
@@ -509,8 +799,10 @@ gap: 10px;
   flex-wrap: wrap;
   background-color: #F8F8F8;
   padding: 5px;
+  font-size: 14px;
   margin-right: 50px;
   width:  82%;
+  height: 48px;
   border-radius: 10px 10px;
 }
 .company-details-font{
@@ -525,6 +817,13 @@ gap: 10px;
   margin-top: 10px;
   font-weight: bold;
 }
+.icon-new-company {
+  text-align: center;
+  margin-left: 450px;
+  margin-bottom: 12px;
+  width: 18px;
+  height: 18px;
+  }
 .notice-period-label{
   font-family: Roboto Flex;
   font-size: 15px;
@@ -563,6 +862,18 @@ gap: 10px;
 }
 .candiates-category-details{
   font-size: 20px;
+  font-family: Roboto Flex;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.input-group-candidate-category{
+  margin-top: 20px;
+  padding:10px;
+  margin-bottom: 20px;
+  width: 94%;
+  height: 48px;
+  display: flex !important;
+  align-items: center;
 }
 .close-btn-candidate-category{
 position: absolute;
@@ -584,12 +895,15 @@ position: absolute;
   margin-bottom: 10px;
 }
 .Employee-details-header{
-  font-size: 15px;
+  font-family: Roboto Flex;
+  font-size: 20px;
+  font-weight: bold;
   margin-top: 10px;
 }
 .employe-role{
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 20px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 .tag-role{
@@ -634,13 +948,14 @@ position: absolute;
   height: 40px;
 }
 .input-candidate-category{
-  flex-wrap: wrap;
+  display: flex;
+  font-family: Roboto Flex;
   background-color: #F8F8F8;
   padding: 5px;
-  margin-right: 50px;
-  width:  82%;
+  width:  85%;
+  height: 48px;
   border-radius: 10px 10px;
-  font-size: 20px;
+  font-size: 14px;
 }
 .paragraf-candidate-add{
   margin-top: 20px;
@@ -669,13 +984,7 @@ position: absolute;
   font-size: 12px;
   cursor: pointer;
 }
-.currency-select-age{
-  background-color: #F8F8F8;
-  border-radius: 10px 10px;
-  height: 50px;
-  width: 80%;
- 
-}
+
 .paragraph-age-range{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -684,17 +993,75 @@ position: absolute;
   font-size: 20px;
  }
  .work-details-header{
-   font-size: 30px;
+   font-size: 20px;
    margin-top: 20px;
    margin-bottom: 20px;
+    font-weight: bold;
+ }
+ .experience{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
  }
  .job-type-details{
   background-color: #F8F8F8;
   border-radius: 10px 10px;
-  height: 50px;
+  height: 48px;
+  font-family: Roboto Flex;
+  font-size: 14px;
+  width: 48%;
+
  }
  .Employeement-type-details{
   background-color: #F8F8F8;
-  border-radius: 20px 20px;
-  height: 50px;
+  border-radius: 10px 10px;
+  height: 48px;
+  font-family: Roboto Flex;
+  font-size: 14px;
+  width: 50%;
+
  }
+ .input-group-select-search {
+  background-color: white;
+  margin-bottom: 15px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center; 
+  height: 50px;
+ 
+
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+#searchButton {
+  display: flex;
+  background-color: #152142;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#searchButton:hover {
+  background-color: #152142;
+  transform: translateY(-2px);
+}
+
+#searchButton:active {
+  background-color: #152142;
+  transform: translateY(0);
+}
+
+.search-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #FFFFFF;
+}

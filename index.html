@@ -43,7 +43,7 @@
     <div class="section">
       <div class="checkbox-group-keywords">
         <input type="checkbox" class="chekbox-mondatory" id="mark-checkbox">
-        <small class="">Mark all keywords as mandatory</small>
+        <small class="mark-mondaray-text">Mark all keywords as mandatory</small>
       </div>
       <div class="add-button" id="addButton">
         <img src="AddIcon.svg" alt="Icon" class="add-icon">
@@ -60,8 +60,8 @@
         <div class="col-md-10 col-18 ">
           <label>IT skills</label>
           <div class="input-group-select">
-            <input type="text" class="input-skills" placeholder="Add IT skills">
-            <select class="Experience-year">
+            <input  class="input-skills" placeholder="Add IT skills">
+            <select class="Experience-year-skills">
               <option value="" disabled selected>Select Experience months</option>
               <option>1-2 years</option>
               <option>2-5 years</option>
@@ -81,13 +81,13 @@
       <div class="row">
         <div class="col-md-10 col-18 ">
           <label>Experience</label>
-          <div class="input-group-select">
-            <select class="Experience-year">
+          <div class="input-group-select-search">
+            <select class="Experience-year-one">
               <option value="" disabled selected>Select Experience years</option>
               <option>1-2 years</option>
               <option>2-5 years</option>
             </select>
-            <select class="Experience-year">
+            <select class="Experience-year-two">
               <option value="" disabled selected>Select Experience months</option>
               <option>1-2 years</option>
               <option>2-5 years</option>
@@ -100,7 +100,7 @@
     <div class="section">
       <label>Current location of candidate</label>
       <div class="input-group-location">
-        <input type="text" class="Location-candiate" placeholder="Add Location">
+        <input class="Location-candiate" placeholder="Add Location">
       </div>
       <div class="tag-location">New Delhi 
         <button class="close-btn-location"><img src="close.svg" alt="Close"></button>
@@ -124,6 +124,7 @@
         <input type="number" class="currency-select" placeholder="Minimum Salary">
         <p class="paragraph-salary-range">To</p>
         <input type="number" class="currency-select" placeholder="Maximum Salary">
+       <div class="currency-select-text">Lacs</div>
       </div>
         <div class="tag-salary-range">INR 10-5 lacs
           <button class="close-btn"><img src="close.svg" alt="Close"></button>
@@ -166,7 +167,7 @@
               <button class="close-btn-keywords"><img src="close.svg" alt="Close"></button>
             </div>
             <span class="action-text">Clear all</span>
-            <span class="icon-new"><img src="IconNew.svg" alt="Icon"></span>
+            <span class="icon-new-company"><img src="IconNew.svg" alt="Icon"></span>
           </div>
   
           <div class="switch-btn">
@@ -174,15 +175,21 @@
               <input type="checkbox">
               <span class="slider round"></span>
             </label>
+            <div class="swich-text">Boolean</div>
           </div>
         </div>
       </div>
+      <div class="add-button-company" id="addButton">
+        <img src="AddIcon.svg" alt="Icon" class="add-icon">
+        <span class="add-exclude">Add Exclude keywords</span>
+      </div>
+      
         <!-- Notice Period Section -->
         <div class="form-section">
             <div class="notice-period-label">Notice Period</lavel>
             <div class="radio-group">
                 <label>
-                    <input type="radio" class="radio-button" name="notice_period" value="any" checked>
+                    <input type="radio"  name="notice_period" value="any" checked>
                     Any
                 </label>
                 <label>
@@ -297,6 +304,7 @@
         <input class="currency-select-age" placeholder="Min Age">
         <p class="paragraph-age-range">To</p>
         <input class="currency-select-age" placeholder="Max Age">
+        <div class="currency-select-text">Years</div>
       </div>
         <div class="work-details-header">Work details</div>
         <label for="experience">Show candiates seeking</label>
@@ -306,17 +314,23 @@
               <label>Experience</label>
               <div class="input-group-select">
                 <select class="job-type-details">
-                  <option value="" disabled selected>job type</option>
+                  <option value="" disabled selected>JOB TYPE</option>
                   <option>1-2 years</option>
                   <option>2-5 years</option>
                 </select>
                 <select class="Employeement-type-details">
-                  <option value="" disabled selected>Employement type</option>
+                  <option value="" disabled selected>EMPLOYEE TYPE</option>
                   <option>1-2 years</option>
                   <option>2-5 years</option>
                 </select>
               </div>
             </div>
+            </div>
+            <div class="search-container">
+              <button id="searchButton">
+                  <span class="search-icon"><img src="searchIcon.svg" alt="Search"></span>
+                  <span class="search-label">Search candidates</span>
+              </button>
           </div>
   <script src="script.js"></script>
   <!-- bootstrap JS Link  -->
