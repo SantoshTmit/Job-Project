@@ -13,7 +13,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   height: 15px;
-  display: flex !important;
+  display: flex;
   align-items: center; 
   gap: 10px
 }
@@ -21,12 +21,10 @@ body {
 .input-group-select {
   background-color: white;
   margin-bottom: 15px;
-  display: flex !important;
+  display: flex ;
   justify-content: space-between;
   align-items: center; 
   gap: 10px;
-  
-
 }
 .it-skills-header{
 color: var(--Black, #202020);
@@ -35,23 +33,6 @@ font-size: 16px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-}
-.input-skills{
-  display: inline-flex;
-  padding: 14px 184.94px 14px 16px;
-  align-items: center;
-  gap: 10.06px;
-  border-radius: 10px;
- background: #F8F8F8;
- width: 700px;
- height: 48px;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #202020;
 }
 
 input[type="text"], button {
@@ -151,36 +132,93 @@ input[type="text"], button {
   display: flex;
   accent-color: #007bff;
 }
+.input-skills{
+padding: 20px;
+ width: 490px;
+ height: 48px;
+ color: #818181;
+ font-family: "Roboto Flex";
+ font-size: 14px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ text-transform: capitalize;
+border-radius: 10px;
+}
+.Experience-year-skills{
+color: #818181;
+font-family: "Roboto Flex";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+height: 48px;
+width: 490px;
+border-radius: 10px;
+}
+.add-exclude{
+  margin-top:5px;
+  color: var(--Black, #202020);
+  font-family: "Roboto Flex";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.add-It-skills{
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: rgba(32, 32, 32, 1);
+  margin-top: 1px;
+  
+}
+.add-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
 .Experience-year{
   width: 85%;
   background-color: #F8F8F8;
   border-radius: 10px 10px;
   height: 48px;
-
+}
+.input-group-select-search {
+  background-color: white;
+  margin-bottom: 15px;
+  display: flex !important;
+  justify-content: space-between;
+ 
+ 
 
 }
 .Experience-year-one{
-  width: 85%;
-  background-color: #F8F8F8;
-  border-radius: 10px 10px;
+  display: flex;
+  width: 490px;
   height: 48px;
- gap: 10px;
-  margin-right: 35px;
+  padding: 10px 203.94px 14px 16px;
+  align-items: center;
+  gap: 10.06px;
+  border-radius: 10px;
+ background: #F8F8F8;
+ color: rgba(129, 129, 129, 1);
 }
 .Experience-year-two{
-  width: 85%;
-  background-color: #F8F8F8;
-  border-radius: 10px 10px;
+  display: flex;
+  width: 490px;
   height: 48px;
-  margin-right: 10px;
+  padding: 10px 203.94px 14px 16px;
+  align-items: center;
+  gap: 10.06px;
+  border-radius: 10px;
+ background: #F8F8F8;
+ color: rgba(129, 129, 129, 1);
 }
-.Experience-year-skills{
-  width: 82%;
-  background-color: #F8F8F8;
-  border-radius: 10px 10px;
-  height: 48px;
-  gap: 5px;
-}
+
 
 .candidate-age{
   margin-top: 10px;
@@ -241,11 +279,6 @@ button {
   background-color: #F8F8F8;
 }
 
-.add-icon {
-  width: 22px;
-  height: 22px;
-  margin-right: 10px;
-}
 
 .input-container {
   margin-top: 20px;
@@ -311,14 +344,7 @@ body {
   gap: 10px;
 }
 
-.input-group-select {
-  background-color: white;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
+
 
 /* Label Styles */
 
@@ -668,14 +694,7 @@ display: flex;
 align-items: center;
 gap: 10px;
 }
-.add-exclude{
-  color: var(--Black, #202020);
-  font-family: "Roboto Flex";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
+
 
 .checkbox-group input[type="checkbox"] {
   margin-right: 20px;
@@ -1052,16 +1071,7 @@ position: absolute;
   width: 50%;
 
  }
- .input-group-select-search {
-  background-color: white;
-  margin-bottom: 15px;
-  display: flex !important;
-  justify-content: space-between;
-  align-items: center; 
-  height: 50px;
  
-
-}
 .search-container {
   display: flex;
   align-items: center;
