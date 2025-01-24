@@ -68,29 +68,72 @@ input[type="text"], button {
   font-size: 14px;
 } */
  .currency-select-dropdown{
-  background-color: #F8F8F8;
-  border-radius: 10px 10px;
-  height: 50px;
-  width: 25%;
+  display: inline-flex;
+  padding: 11.5px 0.586px 13.5px 28.784px;
+  justify-content: center;
+  align-items: center;
+  gap: 6.821px;
+  border-radius: 10px;
+  background: #F8F8F8;
+  width: 150px;
+  height: 48px;
  }
- .currency-select{
-  background-color: #F8F8F8;
-  border-radius: 10px 10px;
-  height: 50px;
-  width: 90%;
+ .currency-select-minimum{
+  display: flex;
+  height: 48px;
+  width: 460px;
+  padding: 16px 132px 16px 16px;
+  align-items: center;
+  border-radius: 10px;
+  background: #F8F8F8;
+ }
+ .currency-select-maximum{
+  display: flex;
+  width: 460px;
+  height: 48px;
+  padding: 16px 167px 16px 14px;
+  align-items: center;
+  border-radius: 10px;
+  background: #F8F8F8;
+  color: rgba(129, 129, 129, 1);
  }
  .currency-select-text{
-  margin-top: 10px;
-  font-size: 14px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  font-weight: bold;
+ color: var(--Black, #202020);
+ font-family: "Roboto Flex";
+ font-size: 14px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: normal;
+ text-transform: capitalize;
  }
  .paragraph-salary-range{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  color: var(--Black, #202020);
+  font-family: "Roboto Flex";
   font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 15px;
+  line-height: normal;
+  text-transform: capitalize;
  }
+ .tag-salary-range {
+  margin-top: 10px;
+  display: inline-flex;
+  padding: 8px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+ border: 1px solid #EAEAEA;
+background: #FFF;
+width: 168px;
+height: 32px;
+}
+.close-btn-salary{
+width: 25px;
+height: 25px;
+margin-bottom: 7px;
+}
  .salary-chekbox{
   width: 15px;
   height: 15px;
@@ -179,6 +222,14 @@ border-radius: 10px;
   height: 16px;
   margin-right: 10px;
   margin-top: 5px;
+}
+.experience-header{
+  color: var(--Black, #202020);
+ font-family: "Roboto Flex";
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 600;
+ line-height: normal;
 }
 
 .Experience-year{
@@ -420,18 +471,7 @@ button {
   position: relative;
 }
 
-.tag .close-btn {
-  position: absolute;
-  margin-right: 10px;
-  margin-left: 85px;
-  top: 2px;
-  left: 60px;
-  background: transparent;
-  border: none;
-  color: #202020;
-  font-size: 12px;
-  cursor: pointer;
-}
+
 
 /* Switch Styles */
 
@@ -527,15 +567,6 @@ input:checked + .slider:before {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-.tag-salary-range {
-  display: inline-block;
-  padding: 10px 50px;
-  background: #f8f8f8;
-  color: #202020;
-  border-radius: 20px 20px;
-  font-size: 15px;
-  height: 50px;
-}
 .tag{
   display: inline-block;
   padding: 10px 50px;
@@ -570,7 +601,7 @@ input:checked + .slider:before {
   font-size: 12px;
   cursor: pointer;
 }
-.tag .close-btn {
+/* .tag .close-btn {
   position: absolute;
   margin-right: 10px;
   margin-left: 85px;
@@ -581,7 +612,7 @@ input:checked + .slider:before {
   color: #202020;
   font-size: 12px;
   cursor: pointer;
-}
+} */
 
 .keywords-section {
   display: flex;
@@ -758,36 +789,57 @@ gap: 10px;
   font-weight: 400;
   margin-top: 10px;
 }
+.location-header{
+color: var(--Black, #202020);
+ font-family: "Roboto Flex";
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 600;
+ line-height: normal;
+}
+.input-group-location{
+  display:flex;
+  height: 48px;
+  width: 1050px;
+  align-items: center;
+  gap: 10.06px;
+  flex-shrink: 0;
+  border-radius: 10px;
+ background: #F8F8F8;
+}
 .Location-candiate{
   background-color: #F8F8F8;
-  padding: 10px;
+  padding: 15px;
   height: 48px;
-  width: 94%;
+  width: 100%;
   font-size: 14px;
   border-radius: 10px 10px;
 }
 .tag-location{
-  display: inline-block;
-  padding: 10px 50px;
-  margin-top: 10px;
-  background: #f8f8f8;
-  color: #202020;
-  border-radius:10px;
-  font-size: 14px;
-  position: relative;
-  height: 48px;
-  text-align: center;
-}
-.input-group-location{
-  margin-top: 10px;
-  padding:10px;
-  margin-bottom: 10px;
-  width: 88%;
-  height: 48px;
-  display: flex !important;
+  display: inline-flex;
+  padding: 8px 10px;
+  justify-content: center;
   align-items: center;
-  
+  gap: 10px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  width: 104px;
+  height: 32px;
+  border-radius: 10px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+  color: rgba(32, 32, 32, 1);
 }
+.annual-salary-header{
+color: var(--Black, #202020);
+font-family: "Roboto Flex";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+color: rgba(32, 32, 32, 1);
+}
+
 .currency-select{
   margin-top: 15px;
   margin-bottom: 15px;

@@ -81,7 +81,7 @@
     <div class="section">
       <div class="row">
         <div class="col-md-10 col-18 ">
-          <label>Experience</label>
+          <label class="experience-header">Experience</label>
           <div class="input-group-select-search">
             <select class="Experience-year-one">
               <option value="" disabled selected>Select Experience years</option>
@@ -99,39 +99,33 @@
     
     <!-- Location -->
     <div class="section">
-      <label>Current location of candidate</label>
+      <label class="location-header">Current location of candidate</label>
       <div class="input-group-location">
         <input class="Location-candiate" placeholder="Add Location">
       </div>
       <div class="tag-location">New Delhi 
         <button class="close-btn-location"><img src="close.svg" alt="Close"></button>
       </div>
-      <div class="tag-location">Mumbai
-        <button class="close-btn-location"><img src="close.svg" alt="Close"></button>
-      </div>
-      <div class="tag-location">Bangalore
-        <button class="close-btn-location"><img src="close.svg" alt="Close"></button>
-    </div>
     
     <!-- Salary -->
     <div class="section">
-      <label>Annual Salary</label>
+      <label class="annual-salary-header">Annual Salary</label>
       <div class="input-group-salary">
         <select class="currency-select-dropdown">
           <option value="INR">INR</option>
           <option value="USD">USD</option>
           <option value="EUR">EUR</option>
         </select>
-        <input type="number" class="currency-select" placeholder="Minimum Salary">
+        <input  class="currency-select-minimum" placeholder="Minimum Salary">
         <p class="paragraph-salary-range">To</p>
-        <input type="number" class="currency-select" placeholder="Maximum Salary">
+        <input  class="currency-select-maximum" placeholder="Maximum Salary">
        <div class="currency-select-text">Lacs</div>
       </div>
         <div class="tag-salary-range">INR 10-5 lacs
-          <button class="close-btn"><img src="close.svg" alt="Close"></button>
+         <button class="close-btn-salary"><img src="close.svg" alt="Close"></button>
       </div>
       <div class="tag-salary-range">INR 10-5 lacs
-        <button class="close-btn"><img src="close.svg" alt="Close"></button>
+        <button class="close-btn-salary"><img src="close.svg" alt="Close"></button>
       </div>
       <div class="checkbox-group-keywords">
         <input type="checkbox" class="salary-chekbox" id="mark-checkbox">
